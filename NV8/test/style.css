@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-container{
+    width:100%;
+    height: 100%;
+
+}
+
+
+.image-container>img{
+    width: 50%;
+    height: 50%;
+    z-index: -2; 
+}
+
+#SHOWTHISONE{
+    display: block;
+}
+
+.slides{
+    display: none; /*ESTO ES PARA QUE NO SE MUESTRE NINGUNA IMAGEN HASTA QUE JS LO INDIQUE  */
+}
+
+
+.btn-dot{
+    background-color: rgb(224, 67, 67);
+    border: 0px;
+    
+    margin-right: 50px;
+    width: 40px;
+    height: 30px;
+}
+
+.btn-container{
+    position: absolute;
+
+    left: 20%;
+    bottom: 25vh;
+}
