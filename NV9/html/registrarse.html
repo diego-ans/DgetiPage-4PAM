@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Formulario de Alumnos</title>
+
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <script src="../js/redir.js"></script>
+
+
+
+    <nav class="nav-bar">
+
+        <div class="nav-header">
+
+            <h1>Cetis-64</h1>
+
+        </div>
+
+        <ul>
+            <li onclick="RedirectTo('index')">Nuestra historia</li>
+            <li style="background-color: rgba(242, 152, 152, 0.51);">Registrarse</li>
+            <li onclick="RedirectTo('carreras')">Carreras</li>
+            <li onclick="RedirectTo('php')">Productos</li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+</head>
+
+<body>
+    <!--Donde enviar los datos? como validarlos?-->
+
+    <form class="formulario" action="../php/formdata.php">
+        
+            <h4>Formulario Registro</h4>
+            <input class= "controls" type= "text" name= "nombres" id= "nombres" placeholder= "nombre" required>
+
+            <input class= "controls" type= "text" name= "apellidoP" id= "apellidop" placeholder= "apellido paterno" required>
+            
+            <input class= "controls" type= "text" name= "apellidoM" id= "apellidom" placeholder= "apellido materno" required>
+            
+            <input class= "controls" type= "email"name= "correo" id= "correo" placeholder="correo" required>
+           
+            <input class= "controls" type= "number" name="tel" id="tel" placeholder="numero telefonico" required>
+            
+            <select name="cargo" id="inputcargo" class="controls" required>
+
+                <option value="tutor">Tutor</option> <!--Si es tutor no requiere segunda verificacion / quiza el N control-->
+                <option value="maestro">Maestro</option>
+                <option value="alumno">Alumno</option>
+                <option value="ejecutivo">Ejecutivo</option>
+
+            </select>
+            <br>
+
+            <input type="checkbox" required>  He leido y acepto el <a class="privacyLink" href="../html/index.html">acuerdo de privacidad.</a>
+            <input class="botons" type="submit">
+            
+
+    </form>
+</body>
+</html>
