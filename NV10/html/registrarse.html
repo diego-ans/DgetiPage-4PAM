@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Formulario de Alumnos</title>
+
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <script src="../js/red.js"></script>
+
+
+
+    <nav class="nav-bar">
+
+        <div class="nav-header">
+
+            <h1>Cetis-64</h1>
+
+        </div>
+
+        <ul>
+            <li onclick="RedirectTo('index')">Nuestra historia</li>
+            <li style="background-color: rgba(242, 152, 152, 0.51);">Registrarse</li>
+            <li onclick="RedirectTo('iniciarsesion')">Iniciar sesion</li>
+            <li onclick="RedirectTo('carreras')">Carreras</li>
+            <li onclick="RedirectTo('php')">Productos</li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+</head>
+
+<body>
+        
+    <form action="../CRUD/REGISTRO/php/create.php" class="formulario" method="post">
+        <h3>Inserte su nombre</h3>
+        <input  class= "controls" type="text" name="nombre" placeholder="Nombre" required maxlength="30" minlength="2">
+
+        <h3>Inserte su apellido paterno</h3>
+        <input  class= "controls" type="text" name="apPat" placeholder="Apellido paterno" required maxlength="30" minlength="2">
+
+        <h3>Inserte su apellido materno</h3>
+        <input  class= "controls" type="text" name="apMat" placeholder="Apellido Materno" required maxlength="30" minlength="2">
+
+        <h3>Escriba a continuacion su correo</h3>
+        <input  class= "controls" type="text" name="correo" placeholder="E-mail" required maxlength="40" minlength="2">
+
+        <h3>Ingrese una contraseña</h3>
+        <input  class= "controls" type="text" name="password" placeholder="Password" required maxlength="30" minlength="2">
+
+        <h3>Escriba su nombre de usuario para el sitio</h3>
+        <input  class= "controls" type="text" name="username" placeholder="Username" required maxlength="30" minlength="2">
+
+        <h3>Ingrese la autoridad que corresponde</h3>
+        <select name="autoridad" class= "controls" required>
+            <option>Tutor</option>
+            <option>Alumno</option>
+            <option>Ejecutivo</option>
+            <option>Docente</option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" required>  He leido y acepto el <a class="privacyLink" href="../html/index.html">acuerdo de privacidad.</a>
+        <button class="botons" type="submit">Registrar usuario</button>
+        <button class="botons" onclick="window.location='../CRUD/REGISTRO/html/delete.html'">Eliminar registro</button>
+        <button class="botons" onclick="window.location='../CRUD/REGISTRO/html/read.html'">Leer registros</button>
+        <button class="botons" onclick="window.location='../CRUD/REGISTRO/html/update.html'">Actualizar</button>
+    </form>
+</body>
+</html>
