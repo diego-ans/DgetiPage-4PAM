@@ -1,0 +1,62 @@
+alojamiento de respaldo: https://github.com/Diegoans337/DgetiPage-4PAM
+
+
+participantes:
+Diego varela colin
+
+Diego gustavo reyes jimenez
+
+Diego ismael gonzalez huerta
+
+Arturo ramales ceballos
+
+Enrique frances martinex
+
+Cristopher jesus medina benitez
+
+---------------------------------------------------------------
+Documento inicializado al momento de crear la primera
+pagina responsiva - v6
+
+VERSIONES ANTERIORES NO ADAPTABLES NO ESTAN DESCRITAS EN ESTE DOC
+
+
+V6.-DVC
+    La version 6 consigue generar que el index sea en un 98% responsivo,
+    la unica cuestion es la imagen de arriba, la cual no ha sido adaptada
+    para contenerse dentro de un div manteniendo su ASPECT_RATIO.
+
+v7.-DVC
+    La imagen del index sigue igual.
+
+    se añadio el formulario de registro con unos ligeros problemas:
+        el color no es el mismo de la paleta de colores original (Deberemos repensar los colores?)
+        aun no se consigue conectar a la bdd el formulario.
+    
+    Se esta planeando en la forma de adaptar el carrito de compras a lo que resta del body en html
+        (Hacerlo responsive? o, solo contenerlo?)
+
+v8.-DVC
+    Imagen del index "arreglada"
+
+    El carrusel ya fue agregado y se ha adaptado responsivamente
+
+
+v9.-DVC
+   Se agregan operaciones CRUD (tiene seguridad el proyecto?)
+
+v10.-DVC
+    Se termino de agregar el crud para el registro y el login, (¿Tienen algo de seguro?)
+
+    Probablemente la pagina vulnerable por la nula validacion que tiene.
+
+v11.-DVC
+    Prueba de funcionamiento fallida, en los archivos php (mejor dejarlo como esta)
+
+
+    Pruebas de acceso ilegitimo hechas, exito al eliminar cerrar sesiones ajenas (me da flojera arreglarlas)
+
+    Todo esta fallando, regresamos a la v10 de github
+
+v11.-
+    Nada que comentar, dios quiera no nos inyecten codigo sql
