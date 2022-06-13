@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/carreras.css">
+
+
+    <script src="../js/red.js"></script>
+    <script src="../js/slider.js"></script>
+
+    <title>Dgeti-CETis 64</title>
+
+
+
+
+    <nav class="nav-bar">
+
+        <div class="nav-header">
+
+            <h1>Cetis-64</h1>
+
+        </div>
+
+        <ul>
+            <li onclick="location='../index.html';">Nuestra historia</li>
+            <li onclick="RedirectTo('registrarse')">Registrarse</li>
+            <li onclick="RedirectTo('iniciarsesion')">Iniciar sesion</li>
+            <li style="background-color: rgba(242, 152, 152, 0.51);">Carreras</li>
+            <li onclick="RedirectTo('php')">Productos</li>
+        </ul>
+
+    </nav>
+
+</head>
+<body>
+    
+
+    <div class="main-container">
+        
+        <div class="image-container">
+            <img class="slides" src="../img/const.jpg" alt="r">
+            <img class="slides" src="../img/trab.jpg" alt="r">
+            <img class="slides" src="../img/mecani.jfif" alt="r">
+            <img class="slides" id="SHOWTHISONE" src="../img/prg.jfif" alt="r">
+        </div>
+
+
+
+        <div class="btn-container">
+            <button style="font-size: 20px; font-weight: bold; color: rgb(253, 253, 253);" 
+            class="btn-dot" onclick="plusDivs(-1)"><strong><</strong></button>
+            <button style="font-size: 20px; font-weight: bold; color: rgb(253, 253, 253);"
+            class="btn-dot" onclick="plusDivs(1)"><strong>></strong></button>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

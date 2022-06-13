@@ -1,0 +1,113 @@
+/*BASICOS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body{
+   background-color: #f7ebd7;   
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+/*BASICOS*/
+
+
+/*Barra lateral*/
+.nav-bar{
+    position: fixed;
+
+    background-color: #b3b3b3;
+    box-shadow: 1px 0px 20px 1px rgb(0, 0, 0);
+    
+    width: 20vw;
+    height: 100vh;
+}
+
+.nav-header{
+    background-color: rgb(136, 2, 2);
+    height: 100px;
+}nav>div>h1{
+    text-align: center;
+    color: rgb(241, 225, 214);
+}
+
+
+ul>li{
+    background-color: rgba(153, 117, 117, 0.51);
+    
+    font-size: 18px;
+    height: fit-content;
+    padding: 12px;
+    overflow-y: auto;
+
+    transition: background-color 0.5s;
+
+}ul>li:hover{
+    background-color: rgba(242, 152, 152, 0.51);;
+    cursor: pointer;
+
+}
+/*Barra lateral*/
+
+
+
+/*CONTENIDO DE LA PAGINA*/
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-container{
+    position: relative;
+    top: 5vh;
+    left: 25vw;
+
+
+    width:70%;
+    height: 100%;
+
+}
+
+
+.image-container>img{
+    width: 100%;
+    height: fit-content;
+    z-index: -2; 
+
+    max-width: 900px;
+    max-height: 700px;
+}
+
+#SHOWTHISONE{
+    display: block;
+}
+
+.slides{
+    display: none; /*ESTO ES PARA QUE NO SE MUESTRE NINGUNA IMAGEN HASTA QUE JS LO INDIQUE  */
+}
+
+
+.btn-dot{
+    background-color: rgb(224, 67, 67);
+    border: 0px;
+    cursor: pointer;
+
+
+    margin-right: 50px;
+    width: 60px;
+    height: 50px;
+}
+
+.btn-container{
+    position: absolute;
+
+    left: 40%;
+    top: 80vh;
+}
