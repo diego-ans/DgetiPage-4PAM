@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar</title>
+    <link rel="stylesheet" href="../../../css/registrarse.css">
+    <script src="../../../js/red.js"></script>
+</head>
+<body>
+        
+
+	<br><br><br>
+
+	<!--Boton para regresar-->
+	<a href="../../../html/registrarse.html">
+    	<button>Regresar</button>
+    </a>
+
+
+    <div>
+        <form class="formulario" action="../php/update.php" method="post">
+        <h1>Actualiza un campo</h1>
+
+        <h3>Nombre del campo que quieres Actualizar</h3>
+        <input class="controls" type="text" name="campo" placeholder="campo a actualizar">
+
+        <h3>Datos con los cuales sera reemplazado</h3>
+        <input class="controls" type="text" name="dato" placeholder="Datos">
+
+        <h3>Nombre del usuario</h3>
+        <input class="controls" type="text" name="Nombre" placeholder="Nombre">
+        
+        <br><br>
+
+        <button class="botons" type="submit">Actualizar</button>
+
+        </form>
+    </div>
+</body>
+</html>

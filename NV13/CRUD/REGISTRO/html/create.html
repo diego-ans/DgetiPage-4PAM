@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <meta charset="UTF-8">
+
+
+
+    <title>Formulario Registro</title>
+</head>
+<body>
+    
+	<!--Boton para regresar-->
+	<a href="../../../index.html">
+    	<button>Regresar</button>
+    </a>
+
+	<br><br><br>
+    <div id="cajaRegistro">
+        <h1>Registra un nuevo usuario</h1>
+
+        <form action="../php/create.php" method="post">
+        
+        <h3>Inserte su nombre</h3>
+        <input type="text" name="nombre" placeholder="Nombre">
+
+        <h3>Inserte su apellido paterno</h3>
+        <input type="text" name="apPat" placeholder="Apellido paterno">
+
+        <h3>Inserte su apellido materno</h3>
+        <input type="text" name="apMat" placeholder="Apellido Materno">
+
+        <h3>Escriba a continuacion su correo</h3>
+        <input type="text" name="correo" placeholder="E-mail">
+
+        <h3>Ingrese una contraseña</h3>
+        <input type="text" name="password" placeholder="Password">
+
+        <h3>Escriba su nombre de usuario para el sitio</h3>
+        <input type="text" name="username">
+
+        <h3>Ingrese la autoridad que corresponde</h3>
+        <select name="autoridad">
+            <option>Tutor</option>
+            <option>Alumno</option>
+            <option>Ejecutivo</option>
+            <option>Docente</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Registrar usuario</button>
+
+        </form>
+    </div>
+</body>
+</html>
