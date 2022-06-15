@@ -1,7 +1,0 @@
-Los archivos SQL se encuentran en
-
-    /NV10/CRUD/sql/ce64.sql
-
-    y
-
-    /NV10/SQL/tienda.sql
